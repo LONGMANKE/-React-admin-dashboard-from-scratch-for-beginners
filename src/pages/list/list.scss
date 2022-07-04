@@ -1,8 +1,11 @@
 .list{
     display: flex;
     width: 100%;
+
+
     .listContainer{
-        font: 6px;
+        flex: 6;
+        font-display: auto;
     }
 
 }
