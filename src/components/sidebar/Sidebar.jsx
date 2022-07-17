@@ -11,6 +11,9 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import React from "react"
+import {
+  Link
+} from "react-router-dom";
 
 
 const Sidebar = () => {
@@ -25,15 +28,19 @@ const Sidebar = () => {
                <DashboardIcon className="icon"/>
                     <span>Dashboard</span>
                     </li>
+                   <Link to="/users">
                     <li>
                       <PersonIcon className="icon"/>
                     <span>Users</span>
                     </li>
+                    </Link>
                     <p className="title">LIST</p>
+                    <Link to="/products">
                     <li>
                       <StoreMallDirectoryOutlinedIcon className="icon"/>
                     <span>Products</span>
                     </li>
+                    </Link>
                     <li>
                       <DeliveryDiningOutlinedIcon className="icon"/>
                     <span>Delivery</span>
